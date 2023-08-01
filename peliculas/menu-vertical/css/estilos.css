@@ -1,0 +1,208 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+    padding:0;
+	webkit-box-sizing: border-box;
+	moz-box-sizing:border-box;
+	box-sizing: border-box;
+}
+
+.posicion{
+	float:left;
+}
+
+
+body{
+	background:#0A2B4E;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	line-height: 18px;
+}
+
+header{  /* Edita la cabecera de la página*/
+	width:100%;
+	overflow:hidden; /*determinar lo que sucede con un elemento cuando su contenido sobrepasa los límites de su contenedor,en este caso lo esconde. */
+	background:url("../../../images/svy5fchleno11.jpg");
+	background-size:contain;
+	margin-bottom:20px;
+}
+
+header .logo{  /*Edita la clase "logo" de la etiqueta header */
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color:#d9e2e7;
+	font-size:80px;
+	font-style: italic;
+	line-height:200px; /*  establece la altura de una casilla remarcada por líneas */
+	float:left; /* ubica el texto a la izquierda */
+}
+
+section{
+	float:center;
+}
+
+a{
+	text-decoration:none;
+	color:#d9e2e7;
+}
+
+h1{
+	margin-top: 20px;
+	background-color: blueviolet;
+	color:aliceblue;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 25px;
+}
+h2{
+	color:aliceblue;
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+}
+
+p{
+	text-align: justify;
+	
+}
+
+li{
+	color:aliceblue;
+}
+
+ul{
+	color:aliceblue;
+}
+
+.wrapper { /* sirve para encerrar contenido de la pagina */
+	width: 90%;
+	max-width:1000px;
+	margin:auto;
+	overflow:hidden;/*determinar lo que sucede con un elemento cuando su contenido sobrepasa los límites de su contenedor,en este caso lo esconde. */
+	float:center;
+}
+
+.contenido p{
+	margin-top:10px;
+	margin-bottom:1em;
+	color:#D9E2E7;
+}
+
+.sombra{
+	font-size:30px;
+	text-shadow: -20px 0px 7px black; 
+}
+
+.back-to-top {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+.btn-menu {
+	display: none;
+	padding:20px;
+	background:#B92022;
+}
+.btn-menu .icono{
+	float:right;
+}
+
+.contenedor-menu{ 
+	width: 20%;
+	min-width: 300px;
+	margin: 50px;
+	display: inline-block;
+	font-family:Consolas, "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", Monaco, "Courier New", "monospace";
+	line-height: 18px;
+}
+
+.contenedor-menu .menu{
+	width: 100%;
+}
+
+.contenedor-menu ul{
+	list-style:none;
+}
+
+.contenedor-menu .menu li a {
+	color:#fff;
+    display: block;
+	padding: 15px 20px;
+	background:#B92022;
+}
+
+.contenedor-menu .menu li a:hover {
+	background: #1a95d5;
+	color:#fff;
+}
+
+.contenedor-menu .menu .icono{
+	font-size: 12px;
+	line-height: 18px;
+}
+
+.contenedor-menu .menu .icono.izquierda{
+	float: left;
+	margin-right: 10px;
+}
+
+
+.contenedor-menu .menu .icono.derecha{
+	float: right;
+	margin-left: 10px;
+}
+
+.contenedor-menu .menu ul{
+	display:none;
+}
+
+.contenedor-menu .menu ul li a {
+	background:#1a95d5;
+	color:#fff;
+}
+
+.contenedor-menu .menu .activado > a {
+	background:#22037E;
+	color:#fff;
+}
+
+@media screen and (max-width:450) { /*Diseño de la página para mobiles */
+	body{
+		padding-top: 80px;
+		
+	}
+	.contenedor-menu{
+		margin:0;
+		width:100%;
+		position:fixed;
+		top:0;
+		z-index: 1000;
+	}
+	
+	.btn-menu{
+		display: block;
+	}
+	
+	contenedor-menu .menu{
+		display: none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
