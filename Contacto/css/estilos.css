@@ -1,0 +1,96 @@
+@charset "utf-8";
+/* CSS Document */
+
+ body {
+      font-family: Arial, sans-serif;
+      background-color: #3C0147;
+      margin: 20px;
+    }
+header{  /* Edita la cabecera de la página*/
+	width:100%;
+	overflow:hidden; /*determinar lo que sucede con un elemento cuando su contenido sobrepasa los límites de su contenedor,en este caso lo esconde. */
+	background-color:#F73ABB;
+	margin-bottom:20px;
+}
+header .logo{  /*Edita la clase "logo" de la etiqueta header */
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	color:#d9e2e7;
+	font-size:80px;
+	font-style: italic;
+	line-height:200px; /*  establece la altura de una casilla remarcada por líneas */
+	float:left; /* ubica el texto a la izquierda */
+}
+
+    form {
+      max-width: 500px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #09A91A;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #016A0D;
+    }
+
+header nav{	
+	font-family:Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size:40px;
+	line-height:200px;
+	float:right; /* ubica el texto a la derecha */
+}
+
+header nav a{
+	display:inline-block;
+	color:#d9e2e7;
+	text-decoration:none;
+	padding:10px 20px;
+	line-height: normal;
+	font-size: 20px;
+	webkit-transition:all 500ms ease;
+	o-transition:all 500ms ease;
+	transition:all 500ms ease;
+}
+
+header nav a:hover{
+	background:#DC140E;
+	border-radius:50px; 
+}
+
+.wrapper { /* sirve para encerrar contenido de la pagina */
+	width: 90%;
+	max-width:1000px;
+	margin:auto;
+	overflow:hidden;/*determinar lo que sucede con un elemento cuando su contenido sobrepasa los límites de su contenedor,en este caso lo esconde. */
+}
+
